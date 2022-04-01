@@ -112,6 +112,30 @@ section {
 
 .active {
   display: block;
+  -webkit-animation: sccaleAnim 2s ease-in-out;
+          animation: sccaleAnim 2s ease-in-out;
+}
+
+@-webkit-keyframes sccaleAnim {
+  0% {
+    -webkit-transform: translateY(-100%) translateX(-100%) scale(0);
+            transform: translateY(-100%) translateX(-100%) scale(0);
+  }
+  50% {
+    -webkit-transform: translateY(0%) translateX(0%) scale(1);
+            transform: translateY(0%) translateX(0%) scale(1);
+  }
+}
+
+@keyframes sccaleAnim {
+  0% {
+    -webkit-transform: translateY(-100%) translateX(-100%) scale(0);
+            transform: translateY(-100%) translateX(-100%) scale(0);
+  }
+  50% {
+    -webkit-transform: translateY(0%) translateX(0%) scale(1);
+            transform: translateY(0%) translateX(0%) scale(1);
+  }
 }
 
 .controlls {

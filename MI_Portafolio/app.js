@@ -31,15 +31,22 @@ function PageTransitions() {
   AllSections.addEventListener('click', (e) =>{
     const id = e.target.dataset.id;
     
-    console.log(id)
+    
     if(id){
         //rEMOVEMOS active AL ELEMENTO QUE TENGA LA TERMINACION active
-        sectBtns.forEach((btn) =>{
+             
+       
+        sectBtn.forEach((btn) =>{
             btn.classList.remove('active');
         })
-        //AGREGAMOS ACTIVE AL ELEMENTO INTERACTUADO CON CLICK
-        e.target.classList.add('active');
 
+        /*/AGREGAMOS ACTIVE AL ELEMENTO INTERACTUADO CON CLICK
+            ESTA AGREGANDO A TODOS LOS ELEMENTOS CON CLASE control AGREGANDO active
+        */ 
+
+            e.target.classList.add('active');
+
+                console.log(id)
         //ocultar otras secciones
         sections.forEach((section)=>{
             section.classList.remove('active');
