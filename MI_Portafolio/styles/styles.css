@@ -193,7 +193,8 @@ section {
 .header-content {
   display: -ms-grid;
   display: grid;
- grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   position: absolute;
   height: 100%;
 }
@@ -280,6 +281,14 @@ section {
 .header-content .right-header .name p {
   line-height: 2rem;
   margin: 1.5rem 0;
+}
+
+.btn-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .main-btn {
